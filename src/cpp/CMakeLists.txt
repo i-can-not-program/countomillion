@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(cpp)
+project(countomillion)
 
-add_executable(cpp cpp.cpp)
-
-install(TARGETS cpp RUNTIME DESTINATION bin/bin)
+add_executable(countomillion countomillion.cpp)

@@ -1,2 +1,4 @@
+build
 src/cpp/build
 src/cpp/.cache
+src/crystal/bin

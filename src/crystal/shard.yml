@@ -2,8 +2,8 @@ name: countomillion
 version: 0.1.0
 
 targets:
-  crystal:
-    main: src/crystal.cr
+  countomillion:
+    main: countomillion.cr
 
 crystal: 1.1.1
 

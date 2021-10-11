@@ -4,6 +4,7 @@ Programs that count to 1000000, in different languages.
 
 ## Requirements
 
+When using Make, these are the requirements:
 | Crystal | C++ | Python | Bash | Kotlin |
 |---------|-----|--------|------|--------|
 [Crystal](https://crystal-lang.org) | C++ compiler | [Python 3](https://python.org) | [bash](https://gnu.org/software/bash/) | Java
@@ -11,16 +12,27 @@ Shards | [CMake](https://cmake.org) |  |  | sh
 
 ## Building
 
-This project uses Make to build.
+Follow these instructions to build:
+
+You have two options to build, Docker, and Make. Docker is recommended.
+
+### Docker
+To build, you can use Make, or [Docker](https://docker.com)
 
 You can build it by following these steps:
 1. Get the source
-2. Run `make` in the directory you put the source code
-3. The built files should be in `build/` (in subdirectories with the name of the language)
+2. Build with Make (`make all`) or Docker (`docker build -t countomillion .`)
+3. If using Make, the built files should be in `build/` (in subdirectories with the name of the language)
 
 ## Running benchmarks
 
+### Make
+
 If `hyperfine` is installed, and the project is built, you can run `hyperfine --show-output build/*/countomillion*`
+
+### Docker
+
+You can use `docker run countomillion` to run the benchmarks
 
 ## Code
 

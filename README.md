@@ -6,7 +6,7 @@ Programs that count to 1000000, in different languages.
 
 | Crystal | C++ | Python | Bash |
 |---------|-----|--------|------|
-[Crystal](https://crystal-lang.org) | C++ compiler | [Python 3](https://python.org) | `bash`
+[Crystal](https://crystal-lang.org) | C++ compiler | [Python 3](https://python.org) | bash
 Shards | [CMake](https://cmake.org)
 
 ## Building
@@ -24,7 +24,8 @@ If `hyperfine` is installed, and the project is built, you can run `hyperfine --
 
 ## Code
 
-The code for all languages is something like this:
+For interpreted languages, a shebang is added at the start.
+Otherwise, the code is done like this:
 1. Set variable `i` to `0`
 2. While `i` is less than `1000000`, increment `i` by `1`, then print `i` and a carriage return
 

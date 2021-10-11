@@ -10,8 +10,6 @@ When using Make, these are the requirements:
 [Crystal](https://crystal-lang.org) | C++ compiler | [Python 3](https://python.org) | [bash](https://gnu.org/software/bash/) | Java
 Shards | [CMake](https://cmake.org) |  |  | sh
 
-If you use Docker instead, 
-
 ## Building
 
 You have two options to build, Docker, and Make. Docker is recommended.

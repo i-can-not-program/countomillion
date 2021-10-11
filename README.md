@@ -4,10 +4,10 @@ Programs that count to 1000000, in different languages.
 
 ## Requirements
 
-| Crystal | C++ | Python | Bash |
-|---------|-----|--------|------|
-[Crystal](https://crystal-lang.org) | C++ compiler | [Python 3](https://python.org) | bash
-Shards | [CMake](https://cmake.org)
+| Crystal | C++ | Python | Bash | Kotlin |
+|---------|-----|--------|------|--------|
+[Crystal](https://crystal-lang.org) | C++ compiler | [Python 3](https://python.org) | [bash](https://gnu.org/software/bash/) | Java
+Shards | [CMake](https://cmake.org) |  |  | sh
 
 ## Building
 

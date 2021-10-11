@@ -2,3 +2,6 @@ build
 src/cpp/build
 src/cpp/.cache
 src/crystal/bin
+src/kotlin/build
+src/kotlin/.idea
+src/kotlin/.gradle

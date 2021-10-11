@@ -15,12 +15,13 @@ If you want to add a new language, please follow these steps (note: replace `my-
 7. Add the build steps to the target (if needed)
 8. In the target, add `install -Dm755 src/my-new-language/path/to/program build/my-new-language/countomillion.file-extension`
 9. Add `my-new-language` as a requirement of the `all` target
-10. Add the build directory (eg. `src/cpp/build`) and any other files that should be ignored to `.gitignore`
-11. If the requirements are in the [Alpine Linux package repository](https://pkgs.alpinelinux.org), add them to the `RUN apk add` line of the Dockerfile 
-12. Test it by running `docker build -t countomillion .`, you can use `docker run countomillion build/my-new-language/countomillion*` to test if it runs
-13. In the [requirements section of README.md](https://github.com/i-can-not-program/countomillion#requirements), add the language and its requirements in the table
-14. If everything works fine, `git add` all the files you modified/created, then commit your changes
-15. Finally, push your changes, then open a pull request!
+10. In the `clean` target, clean the language, either using it's own `clean`, or just use `$(RM)`
+11. Add the build directory (eg. `src/cpp/build`) and any other files that should be ignored to `.gitignore`
+12. If the requirements are in the [Alpine Linux package repository](https://pkgs.alpinelinux.org), add them to the `RUN apk add` line of the Dockerfile 
+13. Test it by running `docker build -t countomillion .`, you can use `docker run countomillion build/my-new-language/countomillion*` to test if it runs
+14. In the [requirements section of README.md](https://github.com/i-can-not-program/countomillion#requirements), add the language and its requirements in the table
+15. If everything works fine, `git add` all the files you modified/created, then commit your changes
+16. Finally, push your changes, then open a pull request!
 
 ## Issues
 

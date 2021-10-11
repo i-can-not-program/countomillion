@@ -1,3 +1,3 @@
-#!/usr/bin/sh
+#!/usr/bin/env sh
 if [[ -n "$1" ]]; then classpath="$1"; else classpath="$(dirname $0)/lib/countomillion.jar"; fi
 java -classpath "$classpath" MainKt

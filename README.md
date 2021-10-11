@@ -10,29 +10,24 @@ When using Make, these are the requirements:
 [Crystal](https://crystal-lang.org) | C++ compiler | [Python 3](https://python.org) | [bash](https://gnu.org/software/bash/) | Java
 Shards | [CMake](https://cmake.org) |  |  | sh
 
-## Building
+If you use Docker instead, 
 
-Follow these instructions to build:
+## Building
 
 You have two options to build, Docker, and Make. Docker is recommended.
 
-### Docker
 To build, you can use Make, or [Docker](https://docker.com)
 
 You can build it by following these steps:
 1. Get the source
 2. Build with Make (`make all`) or Docker (`docker build -t countomillion .`)
-3. If using Make, the built files should be in `build/` (in subdirectories with the name of the language)
+3. If using Make, the built files should be in `build`, with Docker, you can run `docker run countomillion` followed by a command (eg. `build/cpp/countomillion`)
 
 ## Running benchmarks
 
-### Make
+If you're using Make, `hyperfine` is installed, and the project is built, you can run `hyperfine --show-output build/*/countomillion*`
 
-If `hyperfine` is installed, and the project is built, you can run `hyperfine --show-output build/*/countomillion*`
-
-### Docker
-
-You can use `docker run countomillion` to run the benchmarks
+With Docker, you can use `docker run countomillion` to run the benchmarks.
 
 ## Code
 

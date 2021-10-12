@@ -5,9 +5,10 @@ Programs that count to 1000000, in different languages.
 ## Requirements
 
 When using Make, these are the requirements:
-| Crystal | C++ | Python | Bash | Kotlin |
-|---------|-----|--------|------|--------|
-[Crystal](https://crystal-lang.org) | C++ compiler | [Python 3](https://python.org) | [bash](https://gnu.org/software/bash/) | Java
+
+| Crystal | C++ | Python | Bash | Kotlin | Ruby |
+|---------|-----|--------|------|--------|------|
+[Crystal](https://crystal-lang.org) | C++ compiler | [Python 3](https://python.org) | [bash](https://gnu.org/software/bash/) | Java | [Ruby](https://www.ruby-lang.org/en/)
 Shards | [CMake](https://cmake.org) |  |  | sh
 
 ## Building

@@ -1,4 +1,4 @@
-all: cpp crystal python bash kotlin
+all: cpp crystal python bash kotlin ruby
 cpp: cpp-makefile
 	cd src/cpp/build && $(MAKE)
 	install -Dm755 src/cpp/build/countomillion build/cpp/countomillion
@@ -16,6 +16,8 @@ kotlin:
 	cd src/kotlin && ./gradlew build
 	install -Dm644 src/kotlin/build/libs/countomillion-1.0.0.jar build/kotlin/lib/countomillion.jar
 	install -Dm755 src/kotlin/bin/countomillion build/kotlin/countomillion
+ruby:
+	install -Dm755 src/ruby/countomillion.rb build/ruby/countomillion.rb
 clean:
 	$(RM) -r build
 	cd src/cpp/build && $(MAKE) clean

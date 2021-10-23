@@ -1,4 +1,4 @@
-all: cpp crystal python bash kotlin ruby
+all: cpp crystal python bash kotlin ruby perl
 cpp: cpp-makefile
 	cd src/cpp/build && $(MAKE)
 	install -Dm755 src/cpp/build/countomillion build/cpp/countomillion
@@ -18,6 +18,8 @@ kotlin:
 	install -Dm755 src/kotlin/bin/countomillion build/kotlin/countomillion
 ruby:
 	install -Dm755 src/ruby/countomillion.rb build/ruby/countomillion.rb
+perl:
+	install -Dm755 src/perl/countomillion.pl build/perl/countomillion.pl
 clean:
 	$(RM) -r build
 	cd src/cpp/build && $(MAKE) clean
